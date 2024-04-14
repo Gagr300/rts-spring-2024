@@ -17,7 +17,7 @@ void setup() {
 void loop() {
   unsigned long currentMicros = micros();
 
- if (currentMicros - prevMicros[i] >= BLINK_INTERVALs[0]) {
+ if (currentMicros - prevMicros[0] >= BLINK_INTERVALs[0]) {
     prevMicros[0] = currentMicros;
 
     if (ledStates[0] == LOW) {
